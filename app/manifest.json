@@ -17,7 +17,7 @@
     "scripts": ["src/background.js"]
   },
   "incognito": "spanning",
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self' ; 'unsafe-inline'; fonts.googleapis.com/; ",
+  "content_security_policy": "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;",
   "permissions": [
     "webRequest",
     "*://echo360.org.uk/section/",
