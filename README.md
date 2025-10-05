@@ -14,6 +14,14 @@ This project started because 4 Monash kids were sick of downloading lectures ind
 
 This [Chrome Extension](https://support.google.com/chrome_webstore/answer/2664769?hl=en) allows students to download all their lectures (_that they probably won't watch anyway_) from Echo360 online services with the click of a single button.
 
+## Installation
+
+1. Clone or download this repository and keep the `app/` directory intact—Chrome looks for `manifest.json` at the root of the folder you load.
+2. Open `chrome://extensions`, enable **Developer mode**, and choose **Load unpacked**. When prompted, select the `app/` directory from this project.
+3. (Optional) Run `tools/package-extension.sh` to generate `dist/geckodm-extension.zip`. You can share that archive or unzip it into a clean folder and point **Load unpacked** at the extracted contents.
+
+> **Tip:** If Chrome reports that the manifest version is unsupported, double-check that you selected the `app/` folder (or the generated zip) rather than the repository root.
+
 ## Supported Institutions
 To see supported institutions visit [https://github.com/GeckoDM/GeckoDownloadManager/wiki/Supported-Institutions](https://github.com/GeckoDM/GeckoDownloadManager/wiki/Supported-Institutions)
 
